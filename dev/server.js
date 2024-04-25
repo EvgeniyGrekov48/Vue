@@ -35,8 +35,8 @@ NoteModel.init({
 
 sequelize.sync();
 
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+router.use(bodyParser.urlencoded({extended: false}));
+router.use(bodyParser.json());
 
 
 router.get('/', async (req, res) => {
